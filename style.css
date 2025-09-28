@@ -1,0 +1,70 @@
+.phone-base {
+  width: 150px;
+  height: 270px;
+  background: #b6cf6b;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  border: 3px solid #000000;
+}
+.phone-base .screen {
+  width: 125px;
+  height: 120px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 110px;
+  font-size: 30px;
+  border: 3px solid #000000;
+}
+.phone-base .buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 20px);
+  gap: 17px;
+}
+.phone-base .btn {
+  width: 20px;
+  height: 20px;
+  background: #322545;
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+/* Використовуємо абсолютне позиціонування для точного розміщення */
+/*position*/
+.phone-position .screen {
+  position: absolute;   
+  top: 10px;            
+  left: 10px;          
+}
+.phone-position .buttons {
+  position: absolute;   
+  bottom: 15px;         
+  left: 25px;          
+}
+
+/* Використовуємо трансформації для зміщення елементів */
+/*transform */
+.phone-transform .screen {
+  transform: translate(10px, 10px); 
+}
+.phone-transform .buttons {
+  transform: translate(25px, 25px); 
+}
+
+/* Контейнер для телефонів */
+.phones-container {
+  display: flex;         
+  justify-content: left; 
+  gap: 70px;             
+  margin: 20px 40px;       
+}
+
+.phones-container h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
